@@ -66,3 +66,5 @@ python tesseract_ocr.py
 
 
 This README provides detailed steps to set up the environment, install Tesseract OCR, and run the OCR script. Copy and paste this content into your README file. If you have any questions or encounter any issues, feel free to ask!
+
+To start the fast api server run uvicorn servertess:app --reloadgit 
