@@ -7,11 +7,12 @@ import shutil
 
 app = FastAPI()
 
-pytesseract.pytesseract.tesseract_cmd = r'C:\Program Files\Tesseract-OCR\tesseract.exe'
+# Configure Tesseract command to the default location in Docker
+pytesseract.pytesseract.tesseract_cmd = r'/usr/bin/tesseract'
 
 # Configure CORS
 origins = [
-    "http://localhost:3000",
+    "https://ocrscannertool.azurewebsites.net",  # Your frontend URL
 ]
 
 app.add_middleware(

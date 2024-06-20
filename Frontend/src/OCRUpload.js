@@ -23,7 +23,7 @@ function OCRUpload() {
         formData.append('file', file);
 
         try {
-            const response = await axios.post('http://127.0.0.1:8000/ocr/', formData, {
+            const response = await axios.post('https://myFastapiBackend.azurewebsites.net/ocr/', formData, {
                 headers: {
                     'Content-Type': 'multipart/form-data',
                 },
